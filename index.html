@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fonts.css">
+    <title><PRESTTIGE-COUTURE></PRESTTIGE-COUTURE></title>
+    <link rel="shortcut icon" href="HTML5_logo_and_wordmark.svg.png" />
+
+    <!-- Ajoutez ces lignes pour Materialize CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+
+
+<!--Balise meta pour: pour la description, les mots-clés et autres éléments importants pour améliorer le référencement de votre site sur les moteurs de recherche.-->
+<meta name="description" content="Vétements traditionnels sénégalais">
+<meta name="keywords" content="boubou, wolof, costume africain, tabaski, korité, rentrée">
+
+
+</head>
+<body>
+
+        <!-- Bannière Promotionnelle -->
+        <!-- Exemple: Ajouter une animation à la bannière promotionnelle -->
+<div class="promotion-banner animate__animated animate__fadeIn">
+    <p>⚡️ Ne manquez pas notre offre spéciale! Profitez de -20% sur toute la collection avec le code Korité2024. 🎁 ⚡️</p>
+</div>        
+
+    <div class="top-bar">
+        <section class="search-section">
+    <div class="left-section">
+        <div class="cs-logo cs-text">
+            PC
+        </div>
+        
+        <div class="search-bar-wrapper">
+            <i class="fas fa-search search-icon"></i>
+            <input type="text" class="search-input" placeholder="Rechercher...">
+            <button class="search-button">Rechercher</button>
+        </div>
+        
+    </div>
+</section>
+
+<div class="icons-container">
+    <div class="icons">
+        <a href="loginpage.html">
+        <img src="images/kisspng-computer-icons-user-login-icon-design-clip-art-media-clipart-5b4987196b2001.0060399015315453694388.png" alt="Login">
+        </a>
+        
+        <img id="panier-icon" src="images/panier.png" alt="Panier">
+        <span onclick="openCart()" class="cart-icon">   </span>
+        <span class="cart-counter">0</span>
+        <img src="images/kisspng-computer-icons-clip-art-heart-black-5b1365837285e5.8604913415279978274691.png" alt="Favoris">
+        <span class="favorites-counter">0</span>
+    </div>
+    <div class="continent-dropdown">
+        <select id="continentSelector">
+            <option value="africa">Afrique</option>
+            <option value="asia">Asie</option>
+            <option value="europe">Europe</option>
+            <option value="north-america">Amérique du Nord</option>
+            <option value="south-america">Amérique du Sud</option>
+            <option value="australia">Australie</option>
+        </select>
+    </div>
+</div>
+
+
+    </div>
+
+    <header>
+        <h1>PRESTIGE-COUTURE</h1>
+        <p>By Aïcha ✨</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#">Accueil</a></li>
+            <li><a href="homme.html">Hommes</a></li>
+            <li><a href="femme.html">Femmes</a></li>
+            <li><a href="enfants.html">Enfants</a></li>
+            <li><a href="about.html">À Propos</a></li>
+            <li><a href="contacts.html">Contact</a></li>
+            <li><a href="advice.html">Conseils Personnalisés</a></li> <!-- Modification ici -->
+            <li><a href="order.html">Commander</a></li>
+        </ul>
+    </nav>
+
+    <section id="presentation">
+<!-- Ajoutez la classe "elegance-text" à votre phrase -->
+<p class="elegance-text">Découvrez l'élégance à la Sénégalaise avec Prestige Couture - By Aicha ✨</p>
+       <!-- <p>Explorez notre collection de vêtements raffinés conçus pour sublimer votre beauté naturelle.</p>-->
+    </section>
+
+
+    <section id="product-images">
+        <h2>Nos Collections</h2>
+        <div class="product-carousel">
+            <!-- Image 1 -->
+            <div class="collection-container">
+                <img src="images/logo_ia_1.jpeg" alt="Collection Korité">
+                <div class="collection-overlay">Collection Korité</div>
+            </div>
+
+            <!-- Image 2 -->
+            <div class="collection-container">
+                <img src="images/logo_ia_6.jpeg" alt="Collection Tabaski">
+                <div class="collection-overlay">Collection Tabaski</div>
+            </div>
+
+            <!-- Image 3 -->
+            <div class="collection-container">
+                <img src="images/logo_ia_7.jpeg" alt="Collection Rentrée">
+                <div class="collection-overlay">Collection Rentrée</div>
+            </div>    
+
+            <!-- Image 4 -->
+            <div class="collection-container">
+                <img src="images/logo_ia_5.jpeg" alt="Collection Été">
+                <div class="collection-overlay">Collection Été</div>
+            </div>
+            <!-- ... Ajoutez d'autres images au besoin ... -->
+        </div>
+    </section>
+
+<!-- Section Offres Spéciales avec le bouton "En Profiter" -->
+<section id="special-offers">
+    <h2>Offres Spéciales</h2>
+  
+    <div class="special-offer">
+        <img src="images/bing5.jpeg" alt="Offre Spéciale 1">
+        <p class="animate__animated animate__fadeIn">⚡️ Achetez 2 articles, obtenez le 3ème à moitié prix! Utilisez le code RENTREE.🎁 
+            <button class="enjoy-button animate__animated animate__bounceIn">En Profiter</button>
+        </p>
+    </div>
+    
+    
+    <!-- Ajoutez d'autres offres spéciales au besoin -->
+</section>
+
+
+<section id="model-images">
+    <h2>Nos Modèles</h2>
+    <div class="model-carousel" id="model-carousel">
+<!-- Modèle 1 -->
+<div class="model-container animate__animated animate__fadeIn" data-category="hommes">
+    <img src="images/logo_ia_18.jpeg" alt="Model 1">
+    <div class="model-overlay">
+        <p class="model-info">Nom du modèle</p>
+        <p class="model-info">Description du modèle</p>
+        <p class="model-info">Prix: XXXX FCFA</p>
+        <button class="add-to-cart-button" data-product="Model 1">Ajouter au panier</button>
+        <button class="add-to-favorites-button" data-product="Model 1">Ajouter aux favoris</button>
+    </div>
+</div>
+
+<!-- Modèle 2 -->
+<div class="model-container animate__animated animate__fadeIn" data-category="femmes">
+    <img src="images/iia7.jpg" alt="Model 2">
+    <div class="model-overlay">
+        <p class="model-info">Nom du modèle 2</p>
+        <p class="model-info">Description du modèle 2</p>
+        <p class="model-info">Prix: XXXX FCFA</p>
+        <button class="add-to-cart-button" data-product="Model 2">Ajouter au panier</button>
+        <button class="add-to-favorites-button" data-product="Model 2">Ajouter aux favoris</button>
+    </div>
+</div>
+
+<!-- Modèle 3 -->
+<div class="model-container animate__animated animate__fadeIn" data-category="enfants">
+    <img src="images/logo_ia_17.jpeg" alt="Model 3">
+    <div class="model-overlay">
+        <p class="model-info">Nom du modèle</p>
+        <p class="model-info">Description du modèle</p>
+        <p class="model-info">Prix: XXXX FCFA</p>
+        <button class="add-to-cart-button" data-product="Model 3">Ajouter au panier</button>
+        <button class="add-to-favorites-button" data-product="Model 3">Ajouter aux favoris</button>
+    </div>
+</div>
+
+<!-- 'autres modèles avec des images et informations similaires au besoin -->
+    </div>
+</section>
+
+<section id="slider">
+    <div class="slideshow-container">
+        <div class="slide fade">
+            <img src="images/bing3.jpeg" alt="Slide 1">
+        </div>
+        <div class="slide fade">
+            <img src="images/bing6.jpeg" alt="Slide 2">
+        </div>
+        <div class="slide fade">
+            <img src="images/bing5.jpeg" alt="Slide 3">
+        </div>
+    </div>
+</section>
+
+
+<!-- Section Témoignages -->
+<section id="testimonials">
+    <h2>Témoignages de nos Clients</h2>
+    <div class="testimonial">
+        <p>"Un service exceptionnel! Les vêtements sont magnifiques et de grande qualité."</p>
+        <p>- Client Satisfait 1</p>
+    </div>
+    <div class="testimonial">
+        <p>"Codou Style a vraiment su capturer l'essence de la mode sénégalaise. Je recommande vivement!"</p>
+        <p>- Client Satisfait 2</p>
+    </div>
+</section>
+
+<!-- Blog de Mode -->
+<section id="fashion-blog">
+    <h2>Notre Blog de Mode</h2>
+    <article class="blog-post">
+        <h3>Les Tendances de la Saison</h3>
+        <p>Découvrez les dernières tendances de la mode sénégalaise pour cette saison.</p>
+        <a href="#">Lire la suite</a>
+    </article>
+    <article class="blog-post">
+        <h3>Conseils de Style</h3>
+        <p>Obtenez des conseils de style exclusifs pour créer des looks élégants.</p>
+        <a href="#">Lire la suite</a>
+    </article>
+
+    <!-- Vidéo de Présentation -->
+<div class="presentation-video">
+    <iframe width="560" height="315" src="lien_de_la_video" frameborder="0" allowfullscreen></iframe>
+</div>
+
+</section>
+
+<!-- Page de Portfolio pour les Modèles -->
+<section id="model-portfolio">
+    <h2>Portfolio de Nos Modèles</h2>
+    <div class="model-portfolio-item">
+        <img src="images/ia2.jpg" alt="Modèle 1">
+        <p>Nom du Modèle</p>
+    </div>
+    <div class="model-portfolio-item">
+        <img src="images/ia4.jpg" alt="Modèle 2">
+        <p>Nom du Modèle</p>
+    </div>
+</section>
+
+<!-- Programme de Fidélité -->
+<section id="loyalty-program">
+    <h2>Programme de Fidélité</h2>
+    <p>Rejoignez notre programme de fidélité et bénéficiez d'offres exclusives, de réductions et de cadeaux spéciaux.</p>
+    <a href="#">En savoir plus</a>
+</section>
+
+<!-- Intégration des Réseaux Sociaux -->
+<section id="social-sharing">
+    <h2>Suivez-nous sur les Réseaux Sociaux</h2>
+    <div class="social-icons">
+        <a href="#" target="_blank"><img src="logo/icone_facebook.png" alt="Facebook"></a>
+        <a href="#" target="_blank"><img src="logo/icone_insta.png" alt="Instagram"></a>
+        <a href="#" target="_blank"><img src="logo/logo_whatsapp2.png" alt="WhatsApp"></a>
+        <a href="#" target="_blank"><img src="images/logo_x.png" alt="Twitter / X"></a>
+    </div>
+</section>
+
+<!-- Popup d'Abonnement à la Newsletter -->
+<div class="newsletter-popup">
+    <h2>Abonnez-vous à notre Newsletter</h2>
+    <p>Restez informé des dernières tendances, des offres spéciales et des nouveaux arrivages.</p>
+    <form action="subscribe.php" method="post">
+        <input type="email" name="email" placeholder="Entrez votre adresse e-mail" required>
+        <button type="submit">S'abonner</button>
+    </form>
+</div>
+
+<!-- Section Dernières Nouvelles -->
+<section id="last-news" class="last-news-section">
+    <h2 class="section-title">Dernières Nouvelles</h2>
+    <p class="section-description">Découvrez les dernières actualités et nouveautés de Codou Style :</p>
+    
+    <article class="news-post">
+        <h3>Événement Spécial</h3>
+        <p>Ne manquez pas notre prochain événement spécial. Restez à l'écoute pour plus de détails.</p>
+    </article>
+    
+    <article class="news-post">
+        <h3>Nouvelles Collections</h3>
+        <p>Explorez nos nouvelles collections de vêtements tendance. Disponibles dès maintenant!</p>
+    </article>
+</section>
+
+<!-- Rubrique FAQ -->
+<!--<section id="faq-section">
+    <h2>FAQ</h2>
+    <div class="faq-item">
+        <h3>Question 1?</h3>
+        <p>Réponse à la question 1.</p>
+    </div>
+    <div class="faq-item">
+        <h3>Question 2?</h3>
+        <p>Réponse à la question 2.</p>
+    </div>
+
+ Ajoutez d'autres éléments FAQ au besoin -->
+</section>-->
+
+
+<section id="faq-section" class="uk-section uk-container">
+    <h2 class="uk-heading">FAQ</h2>
+    <div class="uk-grid uk-child-width-1-2@m" uk-grid>
+        <div>
+            <h3>Question 1?</h3>
+            <p>Réponse à la question 1.</p>
+        </div>
+        <div>
+            <h3>Question 2?</h3>
+            <p>Réponse à la question 2.</p>
+        </div>
+        <!-- Ajoutez d'autres éléments FAQ au besoin -->
+    </div>
+</section>
+
+
+     <footer>
+        <p>&copy; 2024 Codou Style - Prestige Couture. Tous droits réservés.</p>
+    </footer>
+
+
+<!--   <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Initialise les composants UIKit
+            UIkit.grid('.uk-grid');
+            UIkit.toggle('.uk-toggle');
+            // Ajoutez d'autres initialisations selon vos besoins
+        });
+    </script>  -->
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Initialise la liste déroulante des continents avec Materialize
+            var elems = document.querySelectorAll('select');
+            var instances = M.FormSelect.init(elems); 
+        });
+    </script> 
+   
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Ajoutez des classes d'animation aux éléments au besoin
+            document.querySelector('.promotion-banner').classList.add('animate__animated', 'animate__fadeIn');
+        });
+    </script>  
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Sélection de l'icône du panier
+        var panierIcon = document.getElementById('panier-icon');
+
+        // Ajout de l'événement de clic
+        panierIcon.addEventListener('click', function() {
+            // Redirection vers la page monpanier.html
+            window.location.href = 'monpanier.html';
+        });
+    });
+</script>
+<script>
+// JavaScript pour le slideshow
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("slide");
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}
+    slides[slideIndex-1].style.display = "block";
+    setTimeout(showSlides, 3000); // Change d'image toutes les 3 secondes
+}
+
+
+</script>
+
+</body>
+
+</html>

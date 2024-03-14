@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fonts.css">
+    <title>Conseils Personnalisés de Codou Style</title>
+    <link rel="shortcut icon" href="HTML5_logo_and_wordmark.svg.png" />
+    <!-- Import de la police Lato depuis Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap">
+  
+
+
+<style>
+#measurements-form form label {
+margin-bottom: 5px;
+font-family: 'Lato', sans-serif;
+color: #4c4b4ba8;
+}
+
+footer {
+display: block;
+margin-block-start: 1em;
+margin-block-end: 1em;
+margin-inline-start: 0px;
+margin-inline-end: 0px;
+}
+
+#measurements-form form {
+display: flex;
+flex-direction: column;
+max-width: 300px;
+margin: auto;
+padding: 20px;
+margin-bottom: 15%;
+}
+
+
+    
+
+        #measurements-form form button {
+        margin-top: 4%;
+        background: linear-gradient(to right,#fff, #fce685, #fff);
+        padding: 10px;
+        border: none;
+        cursor: pointer;
+        font-family: 'Lato', sans-serif;
+        }
+
+
+
+</style>
+
+
+</head>
+
+<body>
+    <!-- Ajoutez le contenu de la page "Conseils" ici -->
+    <header>
+        <h1>Conseils Personnalisés de Codou Style</h1>
+    </header>
+
+    <section id="measurements-form">
+        <h2>Prise de Mesures et Choix du Modèle</h2>
+
+        <form action="measurements.php" method="post">
+            <label for="name">Nom:</label>
+            <input type="text" name="name" id="name" required>
+
+            <label for="first_name">Prénom:</label>
+            <input type="text" name="first_name" id="first_name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" required>
+
+            <label for="selected_model">Choisissez un Modèle:</label>
+            <select name="selected_model" id="selected_model" required>
+                <option value="modele1">Modèle 1</option>
+                <option value="modele2">Modèle 2</option>
+                <option value="modele3">Modèle 3</option>
+                <option value="modele4">Modèle 4</option>
+                <option value="modele5">Modèle 5</option>
+                <option value="modele6">Modèle 6</option>
+                <!-- Ajoutez d'autres modèles au besoin -->
+            </select>
+
+            <label for="height">Hauteur (cm):</label>
+            <input type="number" name="height" id="height" required>
+
+            <label for="bust">Tour de Poitrine (cm):</label>
+            <input type="number" name="bust" id="bust" required>
+
+            <label for="waist">Tour de Taille (cm):</label>
+            <input type="number" name="waist" id="waist" required>
+
+            <label for="hip">Tour de Hanches (cm):</label>
+            <input type="number" name="hip" id="hip" required>
+
+            <label for="message">Précisions?:</label>
+            <textarea name="message" id="message" rows="4" required></textarea>
+
+            <button type="submit">Envoyer</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Codou Style - Prestige Couture. Tous droits réservés.</p>
+    </footer>
+
+</body>
+
+</html>

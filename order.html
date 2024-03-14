@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+
+<style>
+
+#order-form form button {
+        margin-top: 4%;
+        background: linear-gradient(to right,#fff, #fce685, #fff) !important;
+        padding: 10px;
+        border: none;
+        cursor: pointer;
+        font-family: 'Lato', sans-serif !important;
+}
+
+
+</style>
+
+
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fonts.css">
+    <title>Commander chez Codou Style - Prestige Couture</title>
+    <link rel="shortcut icon" href="HTML5_logo_and_wordmark.svg.png" />
+</head>
+
+<body>
+    <!-- Ajoutez le contenu de la page "Commander" ici -->
+    <header>
+        <h1>Commander chez Codou Style</h1>
+    </header>
+
+    <section id="order-form">
+        <h2>Passer une Commande</h2>
+        <p>Remplissez le formulaire ci-dessous pour passer votre commande :</p>
+        <form action="order.php" method="post">
+            <label for="name">Nom:</label>
+            <input type="text" name="name" id="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" required>
+
+            <label for="product">Produit(s):</label>
+            <input type="text" name="product" id="product" required>
+
+            <label for="quantity">Quantité(s):</label>
+            <input type="number" name="quantity" id="quantity" required>
+
+            <button type="submit">Passer Commande</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Codou Style - Prestige Couture. Tous droits réservés.</p>
+    </footer>
+
+</body>
+
+</html>

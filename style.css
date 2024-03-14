@@ -1,0 +1,1194 @@
+@font-face {
+    font-family: 'Monterey';
+    src: url('font/MontereyFLF.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('font/RobotoCondensed-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('font/Lato-Thin.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Mont';
+    src: url('font/Montserrat-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Alleysha';
+    src: url('font/Alleysha.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'A_bit_empty';
+    src: url('font/A Bit Empty.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Nature';
+    src: url('font/Nature.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Byebeach';
+    src: url('font/Byebeach.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*####################################*/
+
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 100;
+    line-height: 1.3;
+    }
+
+.promotion-banner {
+    
+    background-color: linear-gradient(to right, #ffd700, #ffffff); /* Remplacez la couleur par celle de votre choix */
+    color: #000000; /* Couleur du texte, remplacez par celle de votre choix */
+    padding: 10px; /* Ajoutez du remplissage selon vos besoins */
+    height: 2px; /* Ajustez la hauteur selon vos besoins */
+}
+
+/* Ajoutez cette règle pour centrer le texte verticalement dans la bannière */
+.promotion-banner p {
+    margin: 0; /* Réinitialise la marge pour éviter un espacement supplémentaire */
+    line-height: 20px; /* Assurez-vous que le texte est centré verticalement */
+}
+
+/* Barre de recherche et icônes en haut de la page */
+.top-bar {
+    border-radius: 10px;
+    background: linear-gradient(to right,#fff, #f9eaa6, #fff );
+    font-family: 'Lato', sans-serif;
+    height: 48px; /* Ajustez la hauteur selon vos besoins */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+/* Style pour le logo de Codou Style */
+.cs-logo {
+    margin-right: 10px; /* Marge à droite pour l'espace visuel */
+}
+
+.cs-text {
+    margin-left: 20px;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.5em; /* Ajustez la taille de la police selon vos préférences */
+    color: black; /* Couleur du texte */
+}
+
+.left-section {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar-wrapper {
+    color: #000;
+    display: flex;
+    align-items: center;
+    margin-left: 5px; /* Ajustez la marge selon vos besoins */
+}
+
+.search-icon {
+    font-size: 20px;
+    color: #333; /* Couleur du symbole, ajustez selon vos besoins */
+    margin-right: 5px;
+}
+
+.search-input {
+    margin-left: 10px; /* Ajustez la marge selon vos besoins */
+    padding: 5px; /* Ajustez le rembourrage selon vos besoins */
+}
+
+.search-button {
+    background-color: #f9eaa6; /* Couleur de fond du bouton */
+    color: rgb(0, 0, 0); /* Couleur du texte du bouton */
+    padding: 8px 12px; /* Espacement interne du bouton */
+    border: none; /* Supprimer la bordure du bouton */
+    border-radius: 5px; /* Coins arrondis du bouton */
+    cursor: pointer; /* Curseur de type pointer au survol */
+    transition: background-color 0.3s; /* Animation de transition pour la couleur de fond */
+}
+
+/* Changement de couleur de fond au survol du bouton */
+.search-button:hover {
+    background-color:  #f0c901;
+}
+
+
+.top-bar .icons {
+    display: flex;
+   /* align-items: center;*/
+}
+
+.top-bar .icons img {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+
+.icons-container {
+    display: flex;
+    align-items: center;
+}
+
+.continent-dropdown {
+    width: 85px;
+    margin-left: 15px; /* Ajoutez une marge à gauche pour espacer la liste déroulante des autres icônes */
+    margin-right: 10px;
+}
+
+/* Styles pour les compteurs */
+.cart-counter,
+.favorites-counter {
+    position: relative; /* Permet de positionner les compteurs par rapport à leur position initiale */
+    top: -5px; /* Déplace les compteurs de 5 pixels vers le haut (ajustez la valeur selon vos besoins) */
+    right: 4px;
+}
+
+
+
+/* Style du grand titre */
+.main-title {
+    font-family: 'NouvelleFonte', sans-serif;
+    font-size: 2em;
+    color: #ffcc00;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.x-logo {
+    width: 30px;
+    height: 30px;
+}
+/*classe spécifique */
+.header-title {
+    font-family: 'Lato', sans-serif;
+}
+
+/* directement pour l'élément h1 */
+header h1 {
+    font-family: 'Lato', sans-serif;
+    font-size: 60px;
+    color: #000000ce; /* Jaune plus foncé - ajustez la couleur selon vos préférences */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Ombre du texte */
+    margin: 30px;
+}
+
+/* le slogan dans l'en-tête */
+header p {
+    font-family: 'Lato', sans-serif; 
+    color: #000000; /* Jaune plus foncé - ajustez la couleur selon vos préférences */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* Ombre du texte */
+    /*font-size: 20px !important;*/
+    
+}
+
+/* Si une classe spécifique pour le slogan, ajuster */
+.header-slogan {
+    color: #000000; /* Jaune plus foncé - ajustez la couleur selon vos préférences */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.467); /* Ombre du texte */
+}
+
+/* Ajoutez cette règle pour appliquer la police Monterey à la classe "elegance-text" */
+.elegance-text {
+    font-family: 'Lato', sans-serif;
+
+    /* Ajoutez d'autres styles si nécessaire */
+}
+
+
+#presentation h2 {
+    /*font-family: 'Alleysha', sans-serif;*/
+    font-size: 40px;
+    color: #000000;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+#presentation p {
+   /* font-family: 'Alleysha', sans-serif;*/
+
+    font-size: 25px; /* Ajustez la taille de la police selon vos besoins */
+    color: #8b8b8bee; /* Jaune plus foncé - ajustez la couleur selon vos préférences */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Ombre du texte */
+    margin-top: 18px;
+}
+
+/* Application des polices aux éléments */
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/*la version italique pour les éléments nécessaires */
+/*em, i {
+    font-family: 'DMSerifDisplay-Italic', sans-serif;
+}*/
+
+/* Styles spécifiques à Codou Style - Prestige Couture */
+
+/* En-tête */
+
+ header {
+        width: 80%;
+        margin-left: 145px;
+        
+        background: linear-gradient(to right,#fff, #f9eaa6, #fff ); /* Dégradé de blanc à un jaune légèrement atténué */
+        color: #333;
+        text-align: center;
+        padding: 1px;
+        border-radius: 10px;
+    }
+
+/*########################################################*/
+
+@media only screen and (min-width: 601px) {
+    nav,
+    nav .nav-wrapper i,
+    nav a.sidenav-trigger,
+    nav a.sidenav-trigger i {
+        height: 52px !important;
+        line-height: 64px !important;
+        width: 85% !important;
+        background: linear-gradient(to right,#fff, #f9eaa6, #fff ) !important;
+
+    }
+}
+
+
+/*########################################################*/
+
+
+/* Colorer le texte de la barre de navigation en noir */
+nav ul li a {
+    height: 30px;
+    color: black;
+}
+
+/* Si vous souhaitez également changer la couleur au survol */
+nav ul li a:hover {
+    color:#4d4c4c ; /* Remplacez "your_hover_color" par la couleur au survol souhaitée */
+}
+
+
+
+
+
+/* Barre de navigation */
+nav {
+    width: 80%;
+    margin: 0 auto; /* Cette propriété centre l'élément horizontalement */
+    border-radius: 10px;
+    height: 50px;
+    font-family: 'Lato', sans-serif;
+    background: linear-gradient(to right, #fcdb1b, #ffca2b);
+    padding: 1em 0;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Centrer horizontalement les éléments */
+}
+
+nav li {
+    margin-right: 30px;
+}
+
+nav a {
+    font-family: 'Lato', sans-serif;
+    color: #000000; /* Couleur du texte en noir */
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    line-height: 1.5;
+    text-align: center;
+}
+
+
+
+/*########################################################*/
+
+/* Section Présentation */
+#presentation {
+    
+    font-family: 'Alleysha', sans-serif;
+    line-height: 7px;
+    height: 80px;
+    background: linear-gradient(to right, #ffffff, #fffef8);
+    border: 1px solid #ffdb6e;
+    border-radius: 15px;
+    padding: 20px;
+    margin-top: 20px;
+    margin-right: 25px;
+    margin-left: 25px;
+    text-align: center;
+    color: #9897979d;
+}
+
+#presentation h2 {
+
+    font-family: 'Alleysha', sans-serif;
+    color: #000000;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/*########################################################*/
+
+/* Styles du slider d'images */
+#slider {
+    /*border: 1px solid #363636;*/
+    border-radius: 10px;
+    max-width:1100px;
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+#slider img {
+    width: 100%;
+    height: auto;
+}
+
+/*########################################################*/
+
+/* Styles de la section témoignages */
+#testimonials {
+    background: linear-gradient(to right,#fff, #f9eaa6, #fff); /* Dégradé de blanc à un jaune légèrement atténué */
+   border: #f4d442;
+   border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
+    color: #333; /* Couleur du texte assombrie pour une meilleure lisibilité */
+}
+
+.testimonial {
+    margin-bottom: 20px;
+}
+
+/*########################################################*/
+
+/* Styles de la section blog de mode */
+#fashion-blog {
+    background-color: linear-gradient(to right, #fff, #ffe055);
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
+    color: #333; /* Couleur du texte assombrie pour une meilleure lisibilité */
+}
+
+.blog-post {
+    margin-bottom: 20px;
+}
+
+.blog-post a {
+    color: #ffcc00;
+}
+
+
+/*########################################################*/
+
+/* Styles du système de filtrage */
+#product-filter {
+    background-color: #f8f8f8;
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.filter-options {
+    list-style: none;
+    padding: 0;
+}
+
+.filter-options li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.filter-options a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/*########################################################*/
+
+/* Styles de la page de portfolio des modèles */
+#model-portfolio {
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.model-portfolio-item {
+    margin-bottom: 20px;
+}
+
+.model-portfolio-item img {
+    width: 80%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.model-portfolio-overlay {
+
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    opacity: 0;
+    transition: opacity 0.3s;
+
+}
+
+.model-portfolio-:hover .model-portfolio-overlay {
+
+    opacity: 1;
+
+}
+
+
+/*########################################################*/
+
+/* Styles de la section d'intégration des réseaux sociaux */
+#social-sharing {
+    background-color: #f8f8f8;
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.social-icons img {
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+}
+
+
+/*########################################################*/
+
+/* Styles de la section du programme de fidélité */
+#loyalty-program {
+    background-color: linear-gradient(to right, #e5aa00, #fff);
+
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+/*########################################################*/
+
+/* Styles du popup d'abonnement à la newsletter */
+.newsletter-popup {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+.newsletter-popup h2 {
+    margin-bottom: 10px;
+}
+
+.newsletter-popup p {
+    margin-bottom: 20px;
+}
+
+.newsletter-popup input {
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.newsletter-popup button {
+    background-color: #ffcc00;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+/*########################################################*/
+
+
+/* Style pour la vidéo de présentation */
+.presentation-video {
+    height: 50;
+    width: 75%;
+    max-width: 75vw;
+    overflow: hidden;
+}
+
+.presentation-video iframe {
+    height: 50;
+    width: 75;
+}
+
+/*########################################################*/
+
+/* Section Coordonnées */
+#contact-info {
+    background: linear-gradient(to right, #ffd700, #e5aa00); /* Dégradé de doré */
+    color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+/*########################################################*/
+
+/* flex pour aligner les icônes sur la même ligne */
+.social-icons {
+    display: flex;
+    justify-content: space-around; /* Ou utilisez 'space-between' pour un espacement uniforme */
+}
+
+
+/* Style supplémentaire pour le texte sous chaque icône */
+.social-icons div {
+    text-align: center;
+}
+
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 10px;
+}
+
+/*########################################################*/
+
+/* Section Formulaire de Mesures */
+#measure-form {
+    background: linear-gradient(to right, #fff,#ffe055,); /* Dégradé de blanc à doré */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    margin: auto;
+}
+
+form label {
+    margin-bottom: 5px;
+}
+
+form input,
+form select {
+    margin-bottom: 15px;
+    padding: 8px;
+}
+
+form button {
+    background: linear-gradient(to right, #ffd700, #e5aa00); /* Dégradé de doré */
+    color: #fff;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+/*########################################################*/
+
+/* Section Images des Produits */
+#product-images {
+    background: linear-gradient(to right, #fff,#f9eaa6, #fff);  /* Dégradé de blanc à doré */
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Styles pour les images des collections */
+.product-carousel {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.collection-container {
+    position: relative;
+    margin: 10px;
+}
+
+.collection-container img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.collection-overlay {  /*Ombre gris sous les image*/
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(255, 255, 255, 0.7);
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.collection-price {
+    font-family: 'Nature', sans-serif;
+    font-size: 14px;
+    color: #000;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
+
+/*########################################################*/
+
+/* Section Modèles */
+#model-images {
+    background: linear-gradient(to right,#fff, #f9eaa6, #fff ) !important;/* Dégradé de blanc à doré */
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Styles pour les images des modèles */
+.model-carousel {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.model-container {
+    position: relative;
+    margin: 10px;
+    flex: 0 0 calc(33.33% - 20px);
+}
+
+.model-container img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.model-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(255, 255, 255, 0.7);
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.model-info {
+    font-size: 12px;
+}
+
+
+/*########################################################*/
+
+/* Section Conseils Personnalisés */
+#advice-form {
+    background: linear-gradient(to right, #fff, #e5aa00); /* Dégradé de blanc à doré */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+#advice-form form {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    margin: auto;
+}
+
+#advice-form form label {
+    margin-bottom: 5px;
+}
+
+#advice-form form input,
+#advice-form form textarea {
+    margin-bottom: 15px;
+    padding: 8px;
+}
+
+#advice-form form button {
+    background: linear-gradient(to right, #ffd700, #e5aa00); /* Dégradé de doré */
+    color: #fff;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+/*########################################################*/
+
+/* Styles spécifiques pour la section de mesure et de choix du modèle */
+#measurements-form {
+    background: linear-gradient(to right, #fff, #f7e5af); /* Dégradé de blanc à doré */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+#measurements-form h2 {
+    font-family: 'Nature', sans-serif;
+    font-size: 23px;
+    color: #000000;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#measurements-form p {
+    font-family: 'Nature', sans-serif;
+    font-size: 15px;
+    color: #000000ee;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+#measurements-form form {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    margin: auto;
+}
+
+#measurements-form form label {
+    margin-bottom: 5px;
+    font-family: 'Nature', sans-serif;
+    color: #333;
+}
+
+#measurements-form form input,
+#measurements-form form select {
+    margin-bottom: 15px;
+    padding: 8px;
+    font-family: 'Nature', sans-serif;
+}
+
+#measurements-form form button {
+    background: linear-gradient(to right, #ffd700, #e5aa00); /* Dégradé de doré */
+    color: #fff;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    font-family: 'Nature', sans-serif;
+}
+
+
+/*########################################################*/
+
+/* Styles spécifiques pour la section de commande */
+#order-form {
+    background: linear-gradient(to right, #fff, #fcecbb); /* Dégradé de blanc à doré */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+#order-form h2 {
+    font-family: 'Nature', sans-serif;
+    font-size: 23px;
+    color: #000000;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#order-form p {
+    font-family: 'Nature', sans-serif;
+    font-size: 15px;
+    color: #000000ee;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+#order-form form {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    margin: auto;
+}
+
+#order-form form label {
+    margin-bottom: 5px;
+    font-family: 'Nature', sans-serif;
+    color: #333;
+}
+
+#order-form form input,
+#order-form form select {
+    margin-bottom: 15px;
+    padding: 8px;
+    font-family: 'Nature', sans-serif;
+}
+
+#order-form form button {
+    background: linear-gradient(to right, #ffd700, #e5aa00); /* Dégradé de doré */
+    color: #fff;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    font-family: 'Nature', sans-serif;
+}
+
+
+/*########################################################*/
+
+/* Style pour la section FAQ */
+#faq-section {
+    margin-bottom: 6%;
+    margin-top: 10px;
+    background-color: inear-gradient(to right,#fff, #f9eaa6, #fff) !important; /* Couleur de fond de la section FAQ */
+    padding: 30px 20px; /* Espacement intérieur pour plus de lisibilité */
+    text-align: center; /* Centrer le contenu horizontalement */
+}
+
+.faq-item {
+    border-bottom: 1px solid #ddd; /* Bordure inférieure entre chaque élément FAQ */
+    padding: 20px 0; /* Espacement intérieur des éléments FAQ */
+    text-align: left; /* Alignement du texte à gauche à l'intérieur des éléments */
+}
+
+.faq-item h3 {
+    color: #2e3c4e; /* Couleur du titre de la question */
+    font-size: 18px; /* Taille de police pour le titre */
+    margin-bottom: 10px; /* Marge inférieure pour le titre */
+}
+
+.faq-item p {
+    color: #555; /* Couleur du texte de la réponse */
+    font-size: 16px; /* Taille de police pour la réponse */
+    line-height: 1.5; /* Hauteur de ligne pour une meilleure lisibilité */
+}
+
+/*########################################################*/
+
+/* Styles de la section Offres Spéciales */
+#special-offers {
+    margin-left: 55px;
+    margin-right: 55px;
+    background: linear-gradient(to right, #ffffff, #fdf9df); /* Dégradé de blanc à doré */
+    border: 1px solid #f4e585;
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
+    height: 450px;
+}
+
+/* Styles des offres spéciales */
+.special-offer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.special-offer img {
+    width: 265px; /* Ajustez la largeur des images selon vos besoins */
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.special-offer p {
+  
+    margin-top: 20px;
+    width: 45%; /* Ajustez la largeur du texte selon vos besoins */
+    text-align: justify;
+    font-size: 17px;
+    line-height: 1.4;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/*########################################################*/
+
+/* Styles pour le bouton "En Profiter" dans la section Offres Spéciales */
+.enjoy-button {
+    margin-top: 40px;
+   margin-left: 250px;
+    background-color: #4CAF50; /* Couleur de fond du bouton */
+    color: white; /* Couleur du texte du bouton */
+    padding: 10px 20px; /* Espacement interne du bouton */
+    font-size: 16px; /* Taille de la police du bouton */
+    border: none; /* Supprimer la bordure du bouton */
+    border-radius: 5px; /* Coins arrondis du bouton */
+    cursor: pointer; /* Curseur de type pointer au survol */
+    transition: background-color 0.3s; /* Animation de transition pour la couleur de fond */
+}
+
+/* Changement de couleur de fond au survol du bouton */
+.enjoy-button:hover {
+    background-color: #45a049;
+}
+
+/* Style pour la flèche lorsqu'il est ouvert (rotation à -90 degrés) */
+.faq-question.open::after {
+    transform: rotate(-90deg);
+}
+
+#special-offers h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.special-offers-grid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.special-offer-item {
+    position: relative;
+    flex: 0 0 30%; /* Ajustez la largeur des conteneurs selon vos besoins */
+    margin-right: 10px;
+}
+
+.special-offer-item img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.special-offer-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.special-offer-overlay p {
+    margin: 0;
+}
+
+.special-offer-overlay a {
+    display: block;
+    margin-top: 10px;
+    text-decoration: none;
+    background-color: #333;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.special-offer-overlay a:hover {
+    background-color: #555;
+}
+.special-offers-container {
+    display: flex;
+    justify-content: space-between; /* Ajustez cette valeur selon vos préférences */
+    align-items: center; /* Ajustez cette valeur selon vos préférences */
+}
+
+.special-offer {
+    flex: 1;
+    margin-right: 10px; /* Ajoutez une marge entre les offres spéciales si nécessaire */
+}
+
+.special-offer img {
+    margin-top: 10px;
+    margin-right: 10px; /* Ajustez la valeur selon vos préférences */
+}
+
+/*########################################################*/
+
+/* Ajoutez la même couleur de fond à la section "Notre Blog de Mode" */
+#fashion-blog {
+    background-color: linear-gradient(to right, #ffffff, #f8efb5) ;
+    margin-right: 50px;
+    margin-left: 50px;
+    border: 1px solid #ddd; /* Couleur de fond pour "Notre Blog de Mode" */
+    padding: 50px;
+    text-align: center;
+}
+
+
+/*########################################################*/
+
+
+/* Styles pour la section Dernières Nouvelles */
+.last-news-section {
+    border: #ffd700;
+    background: linear-gradient(to right,#fff, #f9eaa6, #fff);
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+/* Styles pour les titres de section */
+.section-title {
+    font-family: 'Lato', sans-serif;
+    color: #333;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Styles pour la description de la section */
+.section-description {
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+    color: #000000ee;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Styles pour les articles de nouvelles */
+.news-post {
+    margin-top: 20px;
+}
+
+/* Styles pour les titres des articles */
+.news-post h3 {
+    font-family: 'Lato', sans-serif;
+    color: #333;
+}
+
+/* Styles pour le texte des articles */
+.news-post p ,
+#order-form p,
+#order-form label
+{
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+    color: #000000ee;
+
+}
+
+#order-form label, 
+#order-form input[type="submit"] {
+    display: inline-block;
+    font-family: 'Lato', sans-serif !important;
+    font-size: 15px;
+    color: #000000ee;
+
+}
+
+
+/*########################*/
+
+#presentation h2 {
+    /*font-family: 'Alleysha', sans-serif;*/
+    font-size: 30px !important; /* Ajustez la taille de la police selon vos besoins */
+    color: #000000;
+    text-shadow: 2px 2px 4px rgba(131, 131, 131, 0.615);
+}
+
+#measurements-form h2,
+#order-form h2,
+#faq-section h2,
+#product-images h2,
+#special-offers h2,
+#model-images h2,
+#testimonials h2,
+#fashion-blog h2,
+#model-portfolio h2,
+.last-news-section h2 {
+    font-family: 'Lato', sans-serif !important;
+    font-size: 40px !important; /* Ajustez la taille de la police selon vos besoins */
+    color: #000000;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#faq-section h3{
+
+    font-size: 20px !important;  
+}
+/******************************************/
+/* Styles pour le slideshow */
+.slideshow-container {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slide {
+    display: none;
+}
+
+.fade {
+    animation: fadeEffect 3s linear infinite;
+}
+
+@keyframes fadeEffect {
+    0% {
+        opacity: 0;
+    }
+    25% {
+        opacity: 1;
+    }
+    75% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+/* Pied de page */
+footer {
+    background: linear-gradient(to right,#fff, #fce57e, #fff );
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+    position: fixed;
+    bottom: 0;
+    height: 9%;
+    width: 100%;
+    margin-top: 100px;
+}

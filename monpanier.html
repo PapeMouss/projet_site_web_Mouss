@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mon Panier</title>
+  <link rel="stylesheet" href="monpanier.css">
+</head>
+<body style="background-image: linear-gradient(to right, #fff, #f9eaa6, #fff);">
+<!-- Logo du panier avec un lien vers monpanier.html -->
+<div class="icons">
+    <a href="monpanier.html">
+        <!-- Ajoutez un identifiant pour le logo du panier -->
+        <img id="panier-icon" src="images/panier.png" alt="Panier">
+        <span class="cart-counter">0</span>
+    </a>
+    <!-- Conteneur du panier avec une classe pour le styler et une classe pour le cacher initialement -->
+    <div id="panier-container" class="panier-container hidden">
+        <!-- Contenu du panier -->
+        <h2>Votre Panier</h2>
+        <ul id="panier-items">
+            <!-- Les articles seront ajoutés ici dynamiquement avec JavaScript -->
+        </ul>
+        <div id="total-price"></div> <!-- Affichage du prix total -->
+    </div>
+</div>
+
+<script src="monpanier.js"></script>
+</body>
+</html>
+
+
+<script>
+
+ // Simulation des articles ajoutés au panier (vous pouvez le remplacer par votre propre logique)
+const articlesDansPanier = [
+    { nom: "Article 1", prix: 10 },
+    { nom: "Article 2", prix: 20 },
+    { nom: "Article 3", prix: 30 }
+];
+
+// Sélectionnez le conteneur des articles dans le panier
+const panierItems = document.getElementById('panier-items');
+const totalPriceContainer = document.getElementById('total-price');
+
+// Boucle à travers les articles dans le panier
+let totalPrice = 0;
+articlesDansPanier.forEach(article => {
+    // Créez un élément de liste pour chaque article
+    const listItem = document.createElement('li');
+    listItem.textContent = `${article.nom} - ${article.prix} FCFA`; // Format du texte : Nom de l'article - Prix
+    // Ajoutez l'élément de liste au conteneur des articles dans le panier
+    panierItems.appendChild(listItem);
+    totalPrice += article.prix; // Ajouter le prix de l'article au total
+});
+
+// Afficher le prix total
+totalPriceContainer.textContent = `Prix Total: ${totalPrice} FCFA`;
+
+
+</script>

@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <title>Collection Enfants - Codou Style</title>
+    <link rel="shortcut icon" href="HTML5_logo_and_wordmark.svg.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+
+
+</head>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Arial', sans-serif;
+    }
+
+    .top-bar {
+        background-color: #333;
+        color: #fff;
+        padding: 5px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .left-section {
+        display: flex;
+        align-items: center;
+    }
+
+    .cs-symbol {
+        color: #000000;
+        font-size: 24px;
+        font-weight: bold;
+        margin-right: 10px;
+    }
+
+            .search-bar {
+        display: flex;
+        align-items: center;
+        background-color: #000000;
+        border-radius: 20px;
+        overflow: hidden;
+        justify-content: space-between; /* Ajout de l'alignement à droite */
+        padding-right: 10px; /* Ajout de l'espacement à droite */
+    }
+
+    .input-field {
+        flex-grow: 1; /* Permet à la zone de recherche de prendre tout l'espace disponible */
+    }
+
+    input[type="text"] {
+        border: none;
+        padding: 10px;
+        width: 100%; /* Utilisation de la largeur à 100% pour remplir l'espace disponible */
+    }
+
+    /* Ajout de styles pour le bouton de recherche */
+    button {
+        background-color: #333;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+
+    header {
+        border-radius: 10px;
+        width: 84%;
+        text-align: center;
+        padding: 2px; /* Ajustez la taille de la section header selon vos besoins */
+       
+    
+    }
+
+    header h1 {
+font-family: 'Lato', sans-serif;
+font-size: 40px;
+text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Ajoutez l'ombre avec ces valeurs */
+margin: 15px !important;
+}
+
+
+
+    #product-images {
+
+        text-align: center;
+        padding: 20px;
+    }
+
+    .product-carousel {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-right: 220px; /* Ajustez la marge pour laisser de l'espace pour le formulaire des mesures */
+}
+
+    .collection-container {
+        padding: 8px;
+        position: relative;
+        overflow: hidden;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .collection-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.5);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        opacity: 0;
+        transition: opacity 0.3s;
+    }
+
+    .collection-container:hover .collection-overlay {
+        opacity: 1;
+    }
+
+    .collection-info {
+        padding: 27px;
+    }
+
+    .collection-name,
+    .collection-description,
+    .collection-price {
+        font-size: 24px;
+    }
+
+  .collection-price {
+    
+        color: #ffffff;
+        font-family: 'Lato', sans-serif;
+        margin-top: 5px; /* Ajustez l'espacement entre la description et le prix selon vos besoins */
+    }
+
+    footer {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 10px;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+
+    /* Style pour la bande verticale et le formulaire des mesures */
+    .vertical-bar {
+        background-color: #ddd;
+        width: 50px; /* Ajustez la largeur de la bande verticale selon vos besoins */
+        position: fixed;
+        top: 0;
+        bottom: O;
+        right: 10;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .measure-form {
+margin-top: 75px;
+height: 645px;
+width: 200px;
+padding: 20px;
+border-radius: 10px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+position: fixed;
+top: 10px;
+right: 10px;
+z-index: 999;
+background: linear-gradient(to right, #fce57e, #fff ); /* Dégradé de blanc à doré */
+}
+
+
+    .measure-form label {
+        display: block;
+        margin-bottom: 8px;
+        font-size: 14px;
+    }
+
+    .measure-form input,
+    .measure-form textarea {
+        width: calc(100% - 20px);
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
+
+    .measure-form textarea {
+        resize: vertical;
+    }
+
+    .measure-form button {
+        background-color: #333;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .measure-form button:hover {
+        background-color: #555;
+    }
+
+
+</style>
+</head>
+
+<body>
+<div class="top-bar">
+    <div class="left-section">
+        <div class="cs-symbol">CS</div>     
+        <div class="search-bar-wrapper">
+            <i class="fas fa-search search-icon"></i>
+            <input type="text" class="search-input" placeholder="Rechercher...">
+            <button class="search-button">Rechercher</button>
+        </div>
+
+
+        
+    </div>
+    <div class="icons">
+        <img src="images/kisspng-computer-icons-user-login-icon-design-clip-art-media-clipart-5b4987196b2001.0060399015315453694388.png" alt="Login">
+        <img src="images/panier.png" alt="Panier">
+        <img src="images/kisspng-computer-icons-clip-art-heart-black-5b1365837285e5.8604913415279978274691.png" alt="Favoris">
+       
+    </div>
+</div>
+
+<header>
+    <h1>Enfants</h1>
+    <p>Découvrez notre élégante collection pour enfants.</p>
+</header>
+
+
+
+<!-- Remplacez la barre de navigation par la mesure-form -->
+<div class="measure-form">
+<label for="height">Hauteur (cm):</label>
+<input type="number" name="height" id="height" required>
+
+<label for="bust">Tour de Poitrine (cm):</label>
+<input type="number" name="bust" id="bust" required>
+
+<label for="waist">Tour de Taille (cm):</label>
+<input type="number" name="waist" id="waist" required>
+
+<label for="hip">Tour de Hanches (cm):</label>
+<input type="number" name="hip" id="hip" required>
+
+<label for="message">Précisions?:</label>
+<textarea name="message" id="message" rows="4" required></textarea>
+
+<button type="submit">Envoyer</button>
+</div>
+
+
+<section id="product-images">
+   <!-- <h2>Collection Hommes</h2> -->
+    <div class="product-carousel">
+
+
+<style>
+            .collection-info {
+            padding: 17px; /* Ajoutez du rembourrage pour l'espacement vertical */
+            }
+
+            .collection-name,
+            .collection-description,
+            .collection-price {
+                font-size: 15px;  /* Ajustez la taille de la police selon vos besoins */
+                color: #fff;
+            }
+        </style>
+        
+        <!-- Image 1 - Collection Hommes -->
+        <div class="collection-container">
+            <img src="images/e1.jpeg" alt="Vêtement Enfants 1">
+            <div class="collection-overlay">
+                <div class="collection-info">
+                    <div class="collection-name">Nom de l'article 1</div>
+                    <div class="collection-description">Description du vêtement Enfants1</div>
+                    <span class="collection-price">Prix: XXXX FCFA</span>
+                    <button class="add-to-cart-btn" onclick="addToCart(this)">Ajouter au panier</button>
+                    <button class="add-to-favorites-btn" onclick="addToFavorites(this)">Ajouter aux favoris</button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Image 2 - Collection Hommes -->
+        <div class="collection-container">
+            <img src="images/e10.jpeg" alt="Vêtement Enfants 2">
+            <div class="collection-overlay">
+                <div class="collection-info">
+                    <div class="collection-name">Nom de l'article 2</div>
+                    <div class="collection-description">Description du vêtement Enfants 2</div>
+                    <span class="collection-price">Prix: XXXX FCFA</span>
+                    <button class="add-to-cart-btn" onclick="addToCart(this)">Ajouter au panier</button>
+                    <button class="add-to-favorites-btn" onclick="addToFavorites(this)">Ajouter aux favoris</button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Image 3 - Collection Hommes -->
+        <div class="collection-container">
+            <img src="images/e8.jpeg" alt="Vêtement Enfants 3">
+            <div class="collection-overlay">
+                <div class="collection-info">
+                    <div class="collection-name">Nom de l'article 3</div>
+                    <div class="collection-description">Description du vêtement Enfants 3</div>
+                    <span class="collection-price">Prix: XXXX FCFA</span>
+                    <button class="add-to-cart-btn" onclick="addToCart(this)">Ajouter au panier</button>
+                    <button class="add-to-favorites-btn" onclick="addToFavorites(this)">Ajouter aux favoris</button>
+                </div>
+            </div>
+        </div>
+        
+
+        <!-- Image 4 - Collection Hommes -->
+        <div class="collection-container">
+            <img src="images/e4.jpeg" alt="Vêtement Enfants 4">
+            <div class="collection-overlay">
+                <div class="collection-info">
+                    <div class="collection-name">Nom de l'article 4</div>
+                    <div class="collection-description">Description du vêtement Enfants 4</div>
+                    <span class="collection-price">Prix: XXXX FCFA</span>
+                    <button class="add-to-cart-btn" onclick="addToCart(this)">Ajouter au panier</button>
+                    <button class="add-to-favorites-btn" onclick="addToFavorites(this)">Ajouter aux favoris</button>
+                </div>
+            </div>
+        </div>    
+
+
+          <!-- Image 5 - Collection Hommes -->
+          <div class="collection-container">
+            <img src="images/e2.jpeg" alt="Vêtement Enfants 5">
+            <div class="collection-overlay">
+                <div class="collection-info">
+                    <div class="collection-name">Nom de l'article 5</div>
+                    <div class="collection-description">Description du vêtement Enfants5</div>
+                    <span class="collection-price">Prix: XXXX FCFA</span>
+                    <button class="add-to-cart-btn" onclick="addToCart(this)">Ajouter au panier</button>
+                    <button class="add-to-favorites-btn" onclick="addToFavorites(this)">Ajouter aux favoris</button>
+                </div>
+            </div>
+        </div>
+        
+
+        <!-- Image 6 - Collection Hommes -->
+        <div class="collection-container">
+            <img src="images/e1.jpeg" alt="Vêtement Enfants 6">
+            <div class="collection-overlay">
+                <div class="collection-info">
+                    <div class="collection-name">Nom de l'article 6</div>
+                    <div class="collection-description">Description du vêtement Enfants 6</div>
+                    <span class="collection-price">Prix: XXXX FCFA</span>
+                    <button class="add-to-cart-btn" onclick="addToCart(this)">Ajouter au panier</button>
+                    <button class="add-to-favorites-btn" onclick="addToFavorites(this)">Ajouter aux favoris</button>
+                </div>
+            </div>
+        </div>   
+
+        <!-- Ajoutez vos images et descriptions de la collection hommes -->
+        <!-- ... -->
+    </div>
+</section>
+
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        M.AutoInit();
+    });
+
+    let cartCount = 0;
+    let favoritesCount = 0;
+
+    function addToCart(btn) {
+        cartCount++;
+        updateCartCount();
+    }
+
+    function addToFavorites(btn) {
+        favoritesCount++;
+        updateFavoritesCount();
+    }
+
+    function updateCartCount() {
+        const cartIcon = document.querySelector('.icons img[src="images/panier.png"]');
+        if (cartIcon) {
+            cartIcon.nextElementSibling.innerText = cartCount > 0 ? `(${cartCount})` : '';
+        }
+    }
+
+    function updateFavoritesCount() {
+        const favoritesIcon = document.querySelector('.icons img[src="images/kisspng-computer-icons-clip-art-heart-black-5b1365837285e5.8604913415279978274691.png"]');
+        if (favoritesIcon) {
+            favoritesIcon.nextElementSibling.innerText = favoritesCount > 0 ? `(${favoritesCount})` : '';
+        }
+    }
+</script>
+</body>
+
+</html>
+
+
+
+
+
+
+<footer>
+    <p>&copy; 2024 Codou Style - Prestige Couture. Tous droits réservés.</p>
+</footer>
+</body>
+
+</html>
